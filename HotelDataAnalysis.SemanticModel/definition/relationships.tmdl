@@ -1,0 +1,5 @@
+relationship c74be59c-503c-40d5-8bee-e1d30448fa91
+	joinOnDateBehavior: datePartOnly
+	fromColumn: Query1.reservation_status_date
+	toColumn: LocalDateTable_02046a58-d245-4c1c-b39c-7b9f503fdfb6.Date
+

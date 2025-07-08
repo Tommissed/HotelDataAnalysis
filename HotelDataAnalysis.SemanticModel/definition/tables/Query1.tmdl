@@ -1,0 +1,374 @@
+table Query1
+	lineageTag: efcbb8c7-faf0-4d4b-9f27-82dd1b6352c5
+
+	measure 'Total Nights' = sum(Query1[stays_in_week_nights]) + sum(Query1[stays_in_weekend_nights])
+		lineageTag: 1eb0fb8d-46e1-4999-9b3b-4f54305e947a
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure 'Parking Percentage' = SUM(Query1[required_car_parking_spaces])/[Total Nights]
+		formatString: 0.00%;-0.00%;0.00%
+		lineageTag: e4a357e8-3ea5-4f5c-9e73-c100be430a49
+
+	column hotel
+		dataType: string
+		lineageTag: 273ccf28-f24a-4843-9ca1-b2c09eafdb5e
+		summarizeBy: none
+		sourceColumn: hotel
+
+		annotation SummarizationSetBy = Automatic
+
+	column is_canceled
+		dataType: double
+		lineageTag: 623c617a-1633-4ecf-9434-f31e9f531c7d
+		summarizeBy: sum
+		sourceColumn: is_canceled
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column lead_time
+		dataType: double
+		lineageTag: 58201e95-b636-4178-b8c2-45c45bc91484
+		summarizeBy: sum
+		sourceColumn: lead_time
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column arrival_date_year
+		dataType: double
+		lineageTag: 1a5e7303-5781-43ec-bff8-c96b458b9fe9
+		summarizeBy: sum
+		sourceColumn: arrival_date_year
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column arrival_date_month
+		dataType: string
+		lineageTag: ffd98452-9b0a-4728-a9af-26c6101a075a
+		summarizeBy: none
+		sourceColumn: arrival_date_month
+
+		annotation SummarizationSetBy = Automatic
+
+	column arrival_date_week_number
+		dataType: double
+		lineageTag: 0da961c6-7f69-4a12-b0b1-a8a4bdaf131d
+		summarizeBy: sum
+		sourceColumn: arrival_date_week_number
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column arrival_date_day_of_month
+		dataType: double
+		lineageTag: a3ddba4d-e903-4ab5-87a3-899004af2874
+		summarizeBy: sum
+		sourceColumn: arrival_date_day_of_month
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column stays_in_weekend_nights
+		dataType: double
+		lineageTag: 46f4accc-f4a5-4faa-b8d3-c56e88195594
+		summarizeBy: sum
+		sourceColumn: stays_in_weekend_nights
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column stays_in_week_nights
+		dataType: double
+		lineageTag: c580e298-05ff-4481-8c50-b2796f874453
+		summarizeBy: sum
+		sourceColumn: stays_in_week_nights
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column adults
+		dataType: double
+		lineageTag: 0ef6d941-ac09-4fe6-8c34-e14ba564723f
+		summarizeBy: sum
+		sourceColumn: adults
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column children
+		dataType: double
+		lineageTag: f4fd7b8f-6222-41ef-9bfc-c1b58acb3610
+		summarizeBy: sum
+		sourceColumn: children
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column babies
+		dataType: double
+		lineageTag: 0fc51c8e-50dc-4e16-b83e-87b56cbe4186
+		summarizeBy: sum
+		sourceColumn: babies
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column meal
+		dataType: string
+		lineageTag: 4eca3172-2d78-4865-a0f5-582632b51d52
+		summarizeBy: none
+		sourceColumn: meal
+
+		annotation SummarizationSetBy = Automatic
+
+	column country
+		dataType: string
+		lineageTag: 8e630c7b-3ee4-49b5-ba1f-dd5838839170
+		summarizeBy: none
+		sourceColumn: country
+
+		annotation SummarizationSetBy = Automatic
+
+	column market_segment
+		dataType: string
+		lineageTag: 9d05b1e2-21e9-421c-899f-fc3d9e566eb8
+		summarizeBy: none
+		sourceColumn: market_segment
+
+		annotation SummarizationSetBy = Automatic
+
+	column distribution_channel
+		dataType: string
+		lineageTag: 260b9b80-ebd1-49a1-9803-9a6b49202ece
+		summarizeBy: none
+		sourceColumn: distribution_channel
+
+		annotation SummarizationSetBy = Automatic
+
+	column is_repeated_guest
+		dataType: double
+		lineageTag: 8c1f9078-8432-4af7-991b-a857c1da029f
+		summarizeBy: sum
+		sourceColumn: is_repeated_guest
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column previous_cancellations
+		dataType: double
+		lineageTag: 172dd28b-55cb-4a74-9664-6cda5afb26f9
+		summarizeBy: sum
+		sourceColumn: previous_cancellations
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column previous_bookings_not_canceled
+		dataType: double
+		lineageTag: fc49c650-dc9d-49d6-a564-c6295636304f
+		summarizeBy: sum
+		sourceColumn: previous_bookings_not_canceled
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column reserved_room_type
+		dataType: string
+		lineageTag: 9b8c1380-edf3-4fa1-87a1-e438e1cece2e
+		summarizeBy: none
+		sourceColumn: reserved_room_type
+
+		annotation SummarizationSetBy = Automatic
+
+	column assigned_room_type
+		dataType: string
+		lineageTag: fd36825b-7bbd-4847-b625-421f751c042e
+		summarizeBy: none
+		sourceColumn: assigned_room_type
+
+		annotation SummarizationSetBy = Automatic
+
+	column booking_changes
+		dataType: double
+		lineageTag: bfe7c77a-1f0e-43fc-8326-06f1a4fa37fe
+		summarizeBy: sum
+		sourceColumn: booking_changes
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column deposit_type
+		dataType: string
+		lineageTag: 5604892d-bead-4c0f-8cc6-f979788d7c2b
+		summarizeBy: none
+		sourceColumn: deposit_type
+
+		annotation SummarizationSetBy = Automatic
+
+	column agent
+		dataType: double
+		lineageTag: 96490742-98fc-4bce-a2e0-18baa969bb89
+		summarizeBy: sum
+		sourceColumn: agent
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column company
+		dataType: string
+		lineageTag: 6a318b8c-db3b-4679-94c6-1a5cc2412be0
+		summarizeBy: none
+		sourceColumn: company
+
+		annotation SummarizationSetBy = Automatic
+
+	column days_in_waiting_list
+		dataType: double
+		lineageTag: 111f6543-5d11-480d-af47-acc9b347677d
+		summarizeBy: sum
+		sourceColumn: days_in_waiting_list
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column customer_type
+		dataType: string
+		lineageTag: 64d50ad8-d1d6-4870-b626-bee2a5d79164
+		summarizeBy: none
+		sourceColumn: customer_type
+
+		annotation SummarizationSetBy = Automatic
+
+	column adr
+		dataType: double
+		lineageTag: fc1da924-39d5-46a1-a175-1ee59b884e9c
+		summarizeBy: sum
+		sourceColumn: adr
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column required_car_parking_spaces
+		dataType: double
+		lineageTag: 4152cd34-a185-4ec3-b7c9-bfbe6156e50d
+		summarizeBy: sum
+		sourceColumn: required_car_parking_spaces
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column total_of_special_requests
+		dataType: double
+		lineageTag: ca5abaaf-8f5b-476d-8bfe-36906b0f0e97
+		summarizeBy: sum
+		sourceColumn: total_of_special_requests
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column reservation_status
+		dataType: string
+		lineageTag: 20c7d0c7-eb30-4f46-8cfa-b937abd2c1b9
+		summarizeBy: none
+		sourceColumn: reservation_status
+
+		annotation SummarizationSetBy = Automatic
+
+	column reservation_status_date
+		dataType: dateTime
+		formatString: Long Date
+		lineageTag: 70dbd45e-62ac-4ec6-bc15-af34002983a6
+		summarizeBy: none
+		sourceColumn: reservation_status_date
+
+		variation Variation
+			isDefault
+			relationship: c74be59c-503c-40d5-8bee-e1d30448fa91
+			defaultHierarchy: LocalDateTable_02046a58-d245-4c1c-b39c-7b9f503fdfb6.'Date Hierarchy'
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column Discount
+		dataType: double
+		lineageTag: b67de628-e0b3-4afd-b8f1-776868c564b2
+		summarizeBy: sum
+		sourceColumn: Discount
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column market_segment2
+		dataType: string
+		lineageTag: 0649f47d-c936-4f95-8c64-21242e082ad3
+		summarizeBy: none
+		sourceColumn: market_segment2
+
+		annotation SummarizationSetBy = Automatic
+
+	column Cost
+		dataType: double
+		lineageTag: c18c11c8-a740-4b82-9f9e-ff31013944b2
+		summarizeBy: sum
+		sourceColumn: Cost
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column meal2
+		dataType: string
+		lineageTag: e4f88fa1-b59e-4e21-82ba-f0d75382269b
+		summarizeBy: none
+		sourceColumn: meal2
+
+		annotation SummarizationSetBy = Automatic
+
+	column Revenue
+		dataType: double
+		lineageTag: c47b3b01-56ab-48dc-a428-04afbd62bdb5
+		summarizeBy: sum
+		sourceColumn: Revenue
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	partition Query1 = m
+		mode: import
+		source =
+				let
+				    Source = Sql.Database("DESKTOP-GRO36SK", "PROJECTS", [Query="with hotels as (#(lf)SELECT * FROM dbo.['2018$']#(lf)union#(lf)SELECT * FROM dbo.['2019$']#(lf)union#(lf)SELECT * FROM dbo.['2020$'])#(lf)#(lf)SELECT * FROM hotels h#(lf)left join dbo.market_segment$ ms#(lf)ON h.market_segment = ms.market_segment#(lf)left join dbo.meal_cost$ mc#(lf)ON mc.meal = h.meal"]),
+				    #"Added Custom" = Table.AddColumn(Source, "Revenue", each ([stays_in_weekend_nights]+[stays_in_week_nights])*([adr]*(1-[Discount]))),
+				    #"Changed Type" = Table.TransformColumnTypes(#"Added Custom",{{"Revenue", type number}, {"reservation_status_date", type date}})
+				in
+				    #"Changed Type"
+
+	annotation PBI_ResultType = Table
+
+	annotation PBI_NavigationStepName = Navigation
+

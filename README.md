@@ -19,6 +19,8 @@ Technologies Used
 - DAX (Data Analysis Expressions for custom metrics)
 - Power Query (data transformation and ETL)
 
+The report dashboard includes ways to filter for hotels by their type, as well as by which Country the hotel is in. Users are also able to filter by specific dates
+
 Future Improvements
 
 - Add Excel-based data source to repo for transparency

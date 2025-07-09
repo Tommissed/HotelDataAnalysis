@@ -1,7 +1,5 @@
 Hotel Data Analysis - Power BI Project
 
-This project is part of my Data Analysis Portfolio
-
 Project Summary
 
 This interactive Power BI report analyzes hotel booking data to uncover insights related to:
@@ -12,6 +10,21 @@ This interactive Power BI report analyzes hotel booking data to uncover insights
 - Seasonal performance
 - Lead time distribution
 - Cancellation rates
+
+Project Objectives & Insights
+
+1. Is our hotel revenue growing by year?
+   - Yes, the total revenue has increased year over year.
+   - The line chart visualizes annual revenue growth. We can see that over time, the daily revenue rate of our hotels is increasing. This can be easily understood by the trend lines showcased in the Sum of Revenue line graph
+   - We can also notice that there seems to be a difference in amount of growth when it comes to City Hotels vs Resort Hotels, with City Hotels having a much more notable growth.
+
+2. Should we increase our parking lot size?
+   - Not necessarily. It seems that the percentage of users using the parking facilities has remained stagnant over the years, so increasing the parking lot size is not recommended.
+  
+3. What trends can we see in the data?
+   - 
+  
+
 
 Technologies Used
 

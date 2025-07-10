@@ -18,7 +18,7 @@ This interactive Power BI report analyzes hotel booking data to uncover insights
    - Yes, the total revenue has increased year over year.
    - The line chart visualizes annual revenue growth. We can see that over time, the daily revenue rate of our hotels is increasing. This can be easily understood by the trend lines showcased in the Revenue by Year line graph
 
-    ![Screenshot of Revenue By Year Viz](images/RevenueByYear.png)
+   ![Screenshot of Revenue By Year Viz](images/RevenueByYear.png)
 
 ### Should we increase our parking lot size?
    - Not necessarily. In regards to parking demand, We can see that for each year, the percentage of bookings that required parking was only between 2%-2.5%. It seems that the percentage of users using the parking facilities has remained stagnant over the years, so increasing the parking lot size is not recommended.

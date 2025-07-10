@@ -33,7 +33,7 @@ This interactive Power BI report analyzes hotel booking data to uncover insights
 
 ⋅⋅⋅⋅* We can also notice that there seems to be a difference in amount of growth when it comes to City Hotels vs Resort Hotels, with City Hotels having a much more notable growth. As seen on the graph below showcasing revenue trend lines.
 
-    *INSERT PHOTO OF PERCENTAGE OF BOOKINGS THAT REQUIRED PARKING SPACES*
+    *INSERT PHOTO OF RESORT VS CITY TREND LINES*
 
 #### 2. Monthly Booking Frequency
 ⋅⋅⋅⋅* By using the total nights spent at our hotels along with when that reservation was booked for, we can see that usually there are much more bookings from July to November (highlighted in red). It should also be noted that the data for 2020 is still incomplete.

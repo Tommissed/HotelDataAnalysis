@@ -4,8 +4,5 @@
 *.DS_Store
 Thumbs.db
 
-# Power BI temp/cache files
-*.pbip
-
 # VSCode folder
 .vscode/

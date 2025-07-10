@@ -10,6 +10,21 @@ table Query1
 		formatString: 0.00%;-0.00%;0.00%
 		lineageTag: e4a357e8-3ea5-4f5c-9e73-c100be430a49
 
+	measure 'Percentage Of Parking'
+		lineageTag: 580f750d-29e5-4616-8172-68d514bd0dc2
+
+	measure Parking_Percentage =
+			DIVIDE(
+			    COUNTROWS(FILTER(Query1, [parking_required] = TRUE)),
+			    [Total Nights]
+			)
+		formatString: 0.00%;-0.00%;0.00%
+		lineageTag: 2ade3055-7559-478f-bf32-ca31ceafab1c
+
+	measure TRUEparking_required = CALCULATE ( COUNTROWS (Query1), FILTER (Query1, Query1[parking_required] = TRUE()))
+		formatString: 0
+		lineageTag: c6f213d9-fee3-413a-b61b-a728da88855b
+
 	column hotel
 		dataType: string
 		lineageTag: 273ccf28-f24a-4843-9ca1-b2c09eafdb5e
@@ -357,6 +372,15 @@ table Query1
 		annotation SummarizationSetBy = Automatic
 
 		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column parking_required = ```
+			IF(Query1[required_car_parking_spaces] > 0, TRUE,FALSE) 
+			```
+		formatString: """TRUE"";""TRUE"";""FALSE"""
+		lineageTag: d4892a26-d5d1-4727-810d-0dac5f86dab0
+		summarizeBy: none
+
+		annotation SummarizationSetBy = Automatic
 
 	partition Query1 = m
 		mode: import

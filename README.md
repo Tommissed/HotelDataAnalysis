@@ -1,6 +1,8 @@
-# Hotel Data Analysis - Power BI Project
+Hotel Data Analysis - Power BI Project
 
-## Project Summary
+This project is part of my Data Analysis Portfolio
+
+Project Summary
 
 This interactive Power BI report analyzes hotel booking data to uncover insights related to:
 
@@ -48,4 +50,4 @@ This interactive Power BI report analyzes hotel booking data to uncover insights
 - DAX (Data Analysis Expressions for custom metrics)
 - Power Query (data transformation and ETL)
 
-## The report dashboard includes ways to filter by date, as well as for hotels by their type, and by which Country the hotel is in.
+## The report dashboard includes ways to filter for hotels by their type, as well as by which Country the hotel is in. Users are also able to filter by specific dates

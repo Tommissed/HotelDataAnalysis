@@ -1,4 +1,4 @@
-Hotel Data Analysis - Power BI Project
+# Hotel Data Analysis - Power BI Project
 
 This project is part of my Data Analysis Portfolio
 
@@ -27,7 +27,9 @@ This interactive Power BI report analyzes hotel booking data to uncover insights
 
    - In the same vein, regardless of how many nights a guest may stay, we can see that for each booking there is a 8.58% chance that the booking will require at least one parking spot for the whole booking.
 
-   ![Screenshot of Percentage of Bookings That Require Parking Facilities](images/PercentageOfBookingsThatRequireParkingSpaces.png)
+<p align="center">
+  <img src="images/PercentageOfBookingsThatRequireParkingSpaces.png" alt="Screenshot of Percentage of Bookings That Require Parking Facilities"/>
+</p>
   
 ### What other trends can we see in the data?
 #### 1. Resort Hotels vs City Hotels

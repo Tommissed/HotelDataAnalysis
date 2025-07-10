@@ -23,7 +23,9 @@ This interactive Power BI report analyzes hotel booking data to uncover insights
 ### Should we increase our parking lot size?
    - Not necessarily. In regards to parking demand, We can see that for each year, the percentage of bookings that required parking was only between 2%-2.5%. It seems that the percentage of users using the parking facilities has remained stagnant over the years, so increasing the parking lot size is not recommended.
 
-   ![Screenshot of Percentage of Users Using Parking Facilities](images/PercentageOfUsersUsingParkingFacilities.png)
+<p align="center">
+  <img src="images/PercentageOfUsersUsingParkingFacilities.png" alt="Screenshot of Percentage of Users Using Parking Facilities"/>
+</p>
 
    - In the same vein, regardless of how many nights a guest may stay, we can see that for each booking there is a 8.58% chance that the booking will require at least one parking spot for the whole booking.
 
@@ -37,7 +39,9 @@ This interactive Power BI report analyzes hotel booking data to uncover insights
 
    - We can also notice that there seems to be a difference in amount of growth when it comes to City Hotels vs Resort Hotels, with City Hotels having a much more notable growth. As seen on the graph below showcasing revenue trend lines.
 
-   ![Screenshot of Resort VS City Revenue Trend Lines](images/ResortVsCityRevenueTrendLines.png)
+<p align="center">
+  <img src="images/ResortVsCityRevenueTrendLines.png" alt="Screenshot of Resort VS City Revenue Trend Lines"/>
+</p>
 
 #### 2. Monthly Booking Frequency
    - By using the total nights spent at our hotels along with when that reservation was booked for, we can see that usually there are much more bookings from July to November (highlighted in red). It should also be noted that the data for 2020 is still incomplete.
@@ -52,4 +56,4 @@ This interactive Power BI report analyzes hotel booking data to uncover insights
 - DAX (Data Analysis Expressions for custom metrics)
 - Power Query (data transformation and ETL)
 
-## The report dashboard includes ways to filter for hotels by their type, as well as by which Country the hotel is in. Users are also able to filter by specific dates
+## If viewed in PowerBI, the report dashboard includes ways to filter for hotels by their type (City/Resort). Filtering by which Country the hotel is in or by specific dates is also available.

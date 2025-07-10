@@ -8,7 +8,6 @@ This interactive Power BI report analyzes hotel booking data to uncover insights
 
 - Booking trends
 - Revenue by market segment
-- Stay duration patterns
 - Seasonal performance
 - Lead time distribution
 

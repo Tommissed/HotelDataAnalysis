@@ -18,31 +18,31 @@ This interactive Power BI report analyzes hotel booking data to uncover insights
    - Yes, the total revenue has increased year over year.
    - The line chart visualizes annual revenue growth. We can see that over time, the daily revenue rate of our hotels is increasing. This can be easily understood by the trend lines showcased in the Revenue by Year line graph
 
-    *INSERT PHOTO OF REVENUE BY YEAR HERE*
+    ![Screenshot of Revenue By Year Viz](images/RevenueByYear.png)
 
 ### Should we increase our parking lot size?
    - Not necessarily. In regards to parking demand, We can see that for each year, the percentage of bookings that required parking was only between 2%-2.5%. It seems that the percentage of users using the parking facilities has remained stagnant over the years, so increasing the parking lot size is not recommended.
 
-   *INSERT PHOTO OF PERCENTAGE OF USERS USING PARKING FACILITIES HERE*
+   ![Screenshot of Percentage of Users Using Parking Facilities](images/PercentageOfUsersUsingParkingFacilities.png)
 
    - In the same vein, regardless of how many nights a guest may stay, we can see that for each booking there is a 8.58% chance that the booking will require at least one parking spot for the whole booking.
 
-   *INSERT PHOTO OF PERCENTAGE OF BOOKINGS THAT REQUIRE PARKING SPACES HERE*
+   ![Screenshot of Percentage of Bookings That Require Parking Facilities](images/PercentageOfBookingsThatRequireParkingSpaces.png)
   
 ### What other trends can we see in the data?
 #### 1. Resort Hotels vs City Hotels
-⋅⋅⋅⋅* By checking the lead time for each booking, we can find out that bookings for resort hotels may have longer average lead times than city hotels.
+   - By checking the lead time for each booking, we can find out that bookings for resort hotels may have longer average lead times than city hotels.
 
-⋅⋅⋅⋅* We can also notice that there seems to be a difference in amount of growth when it comes to City Hotels vs Resort Hotels, with City Hotels having a much more notable growth. As seen on the graph below showcasing revenue trend lines.
+   - We can also notice that there seems to be a difference in amount of growth when it comes to City Hotels vs Resort Hotels, with City Hotels having a much more notable growth. As seen on the graph below showcasing revenue trend lines.
 
-    *INSERT PHOTO OF RESORT VS CITY TREND LINES*
+   ![Screenshot of Resort VS City Revenue Trend Lines](images/ResortVsCityRevenueTrendLines.png)
 
 #### 2. Monthly Booking Frequency
-⋅⋅⋅⋅* By using the total nights spent at our hotels along with when that reservation was booked for, we can see that usually there are much more bookings from July to November (highlighted in red). It should also be noted that the data for 2020 is still incomplete.
+   - By using the total nights spent at our hotels along with when that reservation was booked for, we can see that usually there are much more bookings from July to November (highlighted in red). It should also be noted that the data for 2020 is still incomplete.
 
-    *INSERT PHOTO OF 2018 TOTAL NIGHTS*
-    *INSERT PHOTO OF 2019 TOTAL NIGHTS*
-    *INSERT PHOTO OF 2020 TOTAL NIGHTS*
+   ![Screenshot of 2018 Total Nights](images/2018TotalNights.png)
+   ![Screenshot of 2018 Total Nights](images/2019TotalNights.png)
+   ![Screenshot of 2018 Total Nights](images/2020TotalNights.png)
 
 ## Technologies Used
 

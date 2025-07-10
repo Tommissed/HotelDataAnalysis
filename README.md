@@ -16,7 +16,7 @@ This interactive Power BI report analyzes hotel booking data to uncover insights
 
 ### Is our hotel revenue growing by year?
    - Yes, the total revenue has increased year over year.
-   - The line chart visualizes annual revenue growth. We can see that over time, the daily revenue rate of our hotels is increasing. This can be easily understood by the trend lines showcased in the Revenue by Year line graph
+   - The line chart visualizes annual revenue growth. We can see that over time, the daily revenue rate of our hotels is increasing. This can be easily understood by the trend lines showcased in the Revenue by Year line graph.
 
    ![Screenshot of Revenue By Year Viz](images/RevenueByYear.png)
 

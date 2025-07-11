@@ -10,9 +10,6 @@ table Query1
 		formatString: 0.00%;-0.00%;0.00%
 		lineageTag: e4a357e8-3ea5-4f5c-9e73-c100be430a49
 
-	measure 'Percentage Of Parking'
-		lineageTag: 580f750d-29e5-4616-8172-68d514bd0dc2
-
 	measure Parking_Percentage =
 			DIVIDE(
 			    COUNTROWS(FILTER(Query1, [parking_required] = TRUE)),
@@ -24,6 +21,55 @@ table Query1
 	measure TRUEparking_required = CALCULATE ( COUNTROWS (Query1), FILTER (Query1, Query1[parking_required] = TRUE()))
 		formatString: 0
 		lineageTag: c6f213d9-fee3-413a-b61b-a728da88855b
+
+	measure Yearly_Rev =
+			
+			SUMX(
+			    Query1,
+			    Query1[adr] * (Query1[stays_in_week_nights] + Query1[stays_in_weekend_nights])
+			)
+		lineageTag: 671c6b0c-853a-4733-8dc1-f6978faac65d
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure Rev_Per_Booking =
+			
+			DIVIDE(
+			    SUMX(Query1, Query1[adr] * (Query1[stays_in_week_nights] + Query1[stays_in_weekend_nights])),
+			    COUNTROWS(FILTER (Query1, Query1[is_canceled] <> 1))
+			)
+		lineageTag: e3d10c6e-27f8-494a-ae02-6cae0bb6c84b
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure Non_Canceled_Bookings = COUNTROWS(FILTER(Query1, Query1[is_canceled] <> 1))
+		formatString: 0
+		lineageTag: 522cc4cf-0ce7-4aa2-8c26-7103f34edd5c
+
+	measure Cancelled_Bookings = COUNTROWS(FILTER(Query1, Query1[is_canceled] <> 0))
+		formatString: 0
+		lineageTag: 45c2b355-dc71-41ad-9b29-b21fac62f74e
+
+	measure Cancellation_Rate = ```
+			
+			    DIVIDE([Cancelled_Bookings], COUNTROWS(Query1))
+			```
+		lineageTag: e81389e9-aa02-4bce-bc86-d717ac8f9b44
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure Total_Bookings = COUNTROWS(Query1)
+		formatString: 0
+		lineageTag: 1d509bef-a051-4b40-b516-fe6d07672eaf
+
+	measure Average_Lead_Time =
+			
+			DIVIDE(
+			    SUM(Query1[lead_time]),
+			    [Total_Bookings])
+		lineageTag: bf18f183-dc5f-4003-8b36-fe874f33e98e
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
 
 	column hotel
 		dataType: string
@@ -378,6 +424,25 @@ table Query1
 			```
 		formatString: """TRUE"";""TRUE"";""FALSE"""
 		lineageTag: d4892a26-d5d1-4727-810d-0dac5f86dab0
+		summarizeBy: none
+
+		annotation SummarizationSetBy = Automatic
+
+	column has_children = ```
+			IF(
+			    OR(Query1[babies] > 0, 
+			    Query1[children] > 0
+			    ), TRUE,FALSE) 
+			```
+		formatString: """TRUE"";""TRUE"";""FALSE"""
+		lineageTag: 722cbf8a-ab83-41ae-a354-3db6b55dd81c
+		summarizeBy: none
+
+		annotation SummarizationSetBy = Automatic
+
+	column is_canceled_TRUEFALSE = IF(Query1[is_canceled] = 1, TRUE, FALSE)
+		formatString: """TRUE"";""TRUE"";""FALSE"""
+		lineageTag: 1fd384ed-80b5-49da-8e2d-6668968c5e60
 		summarizeBy: none
 
 		annotation SummarizationSetBy = Automatic

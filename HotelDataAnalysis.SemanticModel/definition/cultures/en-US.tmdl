@@ -4224,16 +4224,6 @@ cultureInfo en-US
 			          }
 			        },
 			        {
-			          "rate": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.476
-			          }
-			        },
-			        {
 			          "fee": {
 			            "Type": "Noun",
 			            "State": "Suggested",
@@ -4615,122 +4605,6 @@ cultureInfo en-US
 			        }
 			      ]
 			    },
-			    "query_1.percentage_of_parking": {
-			      "Definition": {
-			        "Binding": {
-			          "ConceptualEntity": "Query1",
-			          "ConceptualProperty": "Percentage Of Parking"
-			        }
-			      },
-			      "State": "Generated",
-			      "Terms": [
-			        {
-			          "percentage of parking": {
-			            "State": "Generated"
-			          }
-			        },
-			        {
-			          "ratio of parking": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.508
-			          }
-			        },
-			        {
-			          "measurement of parking": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.508
-			          }
-			        },
-			        {
-			          "calculation of parking": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.508
-			          }
-			        },
-			        {
-			          "fraction of parking": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.492
-			          }
-			        },
-			        {
-			          "proportion of parking": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.492
-			          }
-			        },
-			        {
-			          "part of parking": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.492
-			          }
-			        },
-			        {
-			          "section of parking": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.492
-			          }
-			        },
-			        {
-			          "entitlement of parking": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.482
-			          }
-			        },
-			        {
-			          "take of parking": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.468
-			          }
-			        },
-			        {
-			          "profit of parking": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.468
-			          }
-			        }
-			      ]
-			    },
 			    "query_1.parking_percentage1": {
 			      "Definition": {
 			        "Binding": {
@@ -4896,42 +4770,996 @@ cultureInfo en-US
 			          }
 			        }
 			      ]
-			    }
-			  },
-			  "Relationships": {
-			    "query_1_reservation_status_date_date_hierarchy_has_query_1_reservation_status_date_quarter": {
-			      "Binding": {
-			        "ConceptualEntity": "Query1"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "query_1.reservation_status_date.date_hierarchy": {
-			          "Target": {
-			            "Entity": "query_1.reservation_status_date.date_hierarchy"
-			          }
-			        },
-			        "query_1.reservation_status_date.quarter": {
-			          "Target": {
-			            "Entity": "query_1.reservation_status_date.quarter"
-			          }
+			    },
+			    "query_1.yearly_rev": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Query1",
+			          "ConceptualProperty": "Yearly_Rev"
 			        }
 			      },
-			      "Phrasings": [
+			      "State": "Generated",
+			      "Terms": [
 			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "query_1.reservation_status_date.date_hierarchy"
+			          "yearly rev": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "Yearly_Rev": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "rev": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "yearly revolution": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
 			            },
-			            "Object": {
-			              "Role": "query_1.reservation_status_date.quarter"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "reservation_status_date_hierarchies_have_reservation_status_quarters"
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "yearly rotation": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "yearly rpm": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "revolution": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "rotation": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "rpm": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "yearly cycle": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        },
+			        {
+			          "yearly turn": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        },
+			        {
+			          "cycle": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "turn": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
 			        }
 			      ]
 			    },
+			    "query_1.rev_per_booking": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Query1",
+			          "ConceptualProperty": "Rev_Per_Booking"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "rev per booking": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "Rev_Per_Booking": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "rev": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "revolution per booking": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.508
+			          }
+			        },
+			        {
+			          "rotation per booking": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.508
+			          }
+			        },
+			        {
+			          "rpm per booking": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.508
+			          }
+			        },
+			        {
+			          "cycle per booking": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.492
+			          }
+			        },
+			        {
+			          "turn per booking": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.492
+			          }
+			        },
+			        {
+			          "revolution": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "rotation": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "rpm": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "cycle": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "turn": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        }
+			      ]
+			    },
+			    "query_1.non_canceled_bookings": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Query1",
+			          "ConceptualProperty": "Non_Canceled_Bookings"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "non canceled bookings": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "Non_Canceled_Bookings": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "non canceled reservation": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.508
+			          }
+			        },
+			        {
+			          "non canceled hold": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.492
+			          }
+			        },
+			        {
+			          "non canceled option": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.492
+			          }
+			        },
+			        {
+			          "non canceled deposit": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.492
+			          }
+			        },
+			        {
+			          "non canceled appointment": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.482
+			          }
+			        },
+			        {
+			          "non canceled engagement": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.482
+			          }
+			        },
+			        {
+			          "non canceled agreement": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.482
+			          }
+			        },
+			        {
+			          "non canceled contract": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.468
+			          }
+			        }
+			      ]
+			    },
+			    "query_1.cancelled_bookings": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Query1",
+			          "ConceptualProperty": "Cancelled_Bookings"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "cancelled bookings": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "Cancelled_Bookings": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "bookings": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "cancelled reservation": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "reservation": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "cancelled hold": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        },
+			        {
+			          "cancelled option": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        },
+			        {
+			          "cancelled deposit": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        },
+			        {
+			          "hold": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "option": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "deposit": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "cancelled appointment": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.475
+			          }
+			        },
+			        {
+			          "cancelled engagement": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.475
+			          }
+			        }
+			      ]
+			    },
+			    "query_1.cancellation_rate": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Query1",
+			          "ConceptualProperty": "Cancellation_Rate"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "cancellation rate": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "Cancellation_Rate": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "rate": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "cancellation degree": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "cancellation frequency": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "cancellation percentage": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "cancellation ratio": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "cancellation quotient": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "degree": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "frequency": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "ratio": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "quotient": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "cancellation amount": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        },
+			        {
+			          "Average Cancellation Rate": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "query_1.total_bookings": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Query1",
+			          "ConceptualProperty": "Total_Bookings"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "total bookings": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "Total_Bookings": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "bookings": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "aggregate booking": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        },
+			        {
+			          "overall booking": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        },
+			        {
+			          "total reservation": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "reservation": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "total hold": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        },
+			        {
+			          "total option": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        },
+			        {
+			          "total deposit": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        },
+			        {
+			          "hold": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "option": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "deposit": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        }
+			      ]
+			    },
+			    "query_1.average_lead_time": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Query1",
+			          "ConceptualProperty": "Average_Lead_Time"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "average lead time": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "Average_Lead_Time": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "average lead duration": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.762
+			          }
+			        },
+			        {
+			          "average lead interval": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.762
+			          }
+			        },
+			        {
+			          "average lead moment": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.762
+			          }
+			        },
+			        {
+			          "average lead period": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.739
+			          }
+			        },
+			        {
+			          "average lead timetable": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.739
+			          }
+			        }
+			      ]
+			    },
+			    "query_1.has_child": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Query1",
+			          "ConceptualProperty": "has_children"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "has child": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "has_children": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "has youngster": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "has teenager": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "has nipper": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "has kid": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        },
+			        {
+			          "has teen-ager": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        },
+			        {
+			          "has teen": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        },
+			        {
+			          "has adolescent": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        },
+			        {
+			          "has youth": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        },
+			        {
+			          "has juvenile": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        },
+			        {
+			          "has preschooler": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.475
+			          }
+			        }
+			      ]
+			    },
+			    "query_1.is_canceled_TRUEFALSE": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Query1",
+			          "ConceptualProperty": "is_canceled_TRUEFALSE"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "is canceled TRUEFALSE": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "is_canceled_TRUEFALSE": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "Is Canceled": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    }
+			  },
+			  "Relationships": {
 			    "query_1_reservation_status_date_date_hierarchy_has_query_1_reservation_status_date_year": {
 			      "Binding": {
 			        "ConceptualEntity": "Query1"
@@ -4998,6 +5826,303 @@ cultureInfo en-US
 			        }
 			      ]
 			    },
+			    "query_1_has_is_canceled_TRUEFALSE": {
+			      "Binding": {
+			        "ConceptualEntity": "Query1"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "query_1": {
+			          "Target": {
+			            "Entity": "query_1"
+			          }
+			        },
+			        "query_1.is_canceled_TRUEFALSE": {
+			          "Target": {
+			            "Entity": "query_1.is_canceled_TRUEFALSE"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "query_1"
+			            },
+			            "Object": {
+			              "Role": "query_1.is_canceled_TRUEFALSE"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "query_1_have_is_canceled_TRUEFALSEs"
+			        }
+			      ]
+			    },
+			    "query_1_has_has_child": {
+			      "Binding": {
+			        "ConceptualEntity": "Query1"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "query_1": {
+			          "Target": {
+			            "Entity": "query_1"
+			          }
+			        },
+			        "query_1.has_child": {
+			          "Target": {
+			            "Entity": "query_1.has_child"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "query_1"
+			            },
+			            "Object": {
+			              "Role": "query_1.has_child"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "query_1_have_has_child"
+			        }
+			      ]
+			    },
+			    "query_1_has_average_lead_time": {
+			      "Binding": {
+			        "ConceptualEntity": "Query1"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "query_1": {
+			          "Target": {
+			            "Entity": "query_1"
+			          }
+			        },
+			        "query_1.average_lead_time": {
+			          "Target": {
+			            "Entity": "query_1.average_lead_time"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "query_1"
+			            },
+			            "Object": {
+			              "Role": "query_1.average_lead_time"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "query_1_have_average_lead_time"
+			        }
+			      ]
+			    },
+			    "query_1_has_total_bookings": {
+			      "Binding": {
+			        "ConceptualEntity": "Query1"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "query_1": {
+			          "Target": {
+			            "Entity": "query_1"
+			          }
+			        },
+			        "query_1.total_bookings": {
+			          "Target": {
+			            "Entity": "query_1.total_bookings"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "query_1"
+			            },
+			            "Object": {
+			              "Role": "query_1.total_bookings"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "query_1_have_total_bookings"
+			        }
+			      ]
+			    },
+			    "query_1_has_cancellation_rate": {
+			      "Binding": {
+			        "ConceptualEntity": "Query1"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "query_1": {
+			          "Target": {
+			            "Entity": "query_1"
+			          }
+			        },
+			        "query_1.cancellation_rate": {
+			          "Target": {
+			            "Entity": "query_1.cancellation_rate"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "query_1"
+			            },
+			            "Object": {
+			              "Role": "query_1.cancellation_rate"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "query_1_have_cancellation_rate"
+			        }
+			      ]
+			    },
+			    "query_1_has_cancelled_bookings": {
+			      "Binding": {
+			        "ConceptualEntity": "Query1"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "query_1": {
+			          "Target": {
+			            "Entity": "query_1"
+			          }
+			        },
+			        "query_1.cancelled_bookings": {
+			          "Target": {
+			            "Entity": "query_1.cancelled_bookings"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "query_1"
+			            },
+			            "Object": {
+			              "Role": "query_1.cancelled_bookings"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "query_1_have_cancelled_bookings"
+			        }
+			      ]
+			    },
+			    "query_1_has_non_canceled_bookings": {
+			      "Binding": {
+			        "ConceptualEntity": "Query1"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "query_1": {
+			          "Target": {
+			            "Entity": "query_1"
+			          }
+			        },
+			        "query_1.non_canceled_bookings": {
+			          "Target": {
+			            "Entity": "query_1.non_canceled_bookings"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "query_1"
+			            },
+			            "Object": {
+			              "Role": "query_1.non_canceled_bookings"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "query_1_have_non_canceled_bookings"
+			        }
+			      ]
+			    },
+			    "query_1_has_rev_per_booking": {
+			      "Binding": {
+			        "ConceptualEntity": "Query1"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "query_1": {
+			          "Target": {
+			            "Entity": "query_1"
+			          }
+			        },
+			        "query_1.rev_per_booking": {
+			          "Target": {
+			            "Entity": "query_1.rev_per_booking"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "query_1"
+			            },
+			            "Object": {
+			              "Role": "query_1.rev_per_booking"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "query_1_have_rev_per_booking"
+			        }
+			      ]
+			    },
+			    "query_1_has_yearly_rev": {
+			      "Binding": {
+			        "ConceptualEntity": "Query1"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "query_1": {
+			          "Target": {
+			            "Entity": "query_1"
+			          }
+			        },
+			        "query_1.yearly_rev": {
+			          "Target": {
+			            "Entity": "query_1.yearly_rev"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "query_1"
+			            },
+			            "Object": {
+			              "Role": "query_1.yearly_rev"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "query_1_have_yearly_rev"
+			        }
+			      ]
+			    },
 			    "query_1_has_TRU_eparking_required": {
 			      "Binding": {
 			        "ConceptualEntity": "Query1"
@@ -5061,39 +6186,6 @@ cultureInfo en-US
 			          "State": "Generated",
 			          "Weight": 0.99,
 			          "ID": "query_1_have_parking_percentage"
-			        }
-			      ]
-			    },
-			    "query_1_has_percentage_of_parking": {
-			      "Binding": {
-			        "ConceptualEntity": "Query1"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "query_1": {
-			          "Target": {
-			            "Entity": "query_1"
-			          }
-			        },
-			        "query_1.percentage_of_parking": {
-			          "Target": {
-			            "Entity": "query_1.percentage_of_parking"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "query_1"
-			            },
-			            "Object": {
-			              "Role": "query_1.percentage_of_parking"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "query_1_have_percentage_of_parking"
 			        }
 			      ]
 			    },
@@ -6561,6 +7653,39 @@ cultureInfo en-US
 			          "State": "Generated",
 			          "Weight": 0.99,
 			          "ID": "some_query_1_are_parking_required_query_1"
+			        }
+			      ]
+			    },
+			    "query_1_reservation_status_date_date_hierarchy_has_query_1_reservation_status_date_quarter": {
+			      "Binding": {
+			        "ConceptualEntity": "Query1"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "query_1.reservation_status_date.date_hierarchy": {
+			          "Target": {
+			            "Entity": "query_1.reservation_status_date.date_hierarchy"
+			          }
+			        },
+			        "query_1.reservation_status_date.quarter": {
+			          "Target": {
+			            "Entity": "query_1.reservation_status_date.quarter"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "query_1.reservation_status_date.date_hierarchy"
+			            },
+			            "Object": {
+			              "Role": "query_1.reservation_status_date.quarter"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "reservation_status_date_hierarchies_have_reservation_status_quarters"
 			        }
 			      ]
 			    },

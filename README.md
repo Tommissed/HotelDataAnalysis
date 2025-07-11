@@ -49,6 +49,19 @@ This interactive Power BI report analyzes hotel booking data to uncover insights
    ![Screenshot of 2018 Total Nights](images/2019TotalNights.png)
    ![Screenshot of 2018 Total Nights](images/2020TotalNights.png)
 
+#### 2. Cancellation Habits
+   - Bookings made with children or babies as guests seem to have a significant increase in cancelations. However, bookings with children only accounted for ~10% of all bookings.
+
+   ![Screenshot of Average Cancellation Rate](images/AverageCancellationRate.png)
+
+   - The country with the most cancellations is Portugal. It would be worth looking into why this may be the case. Perhaps it could be an issue with payment methods, poor communication or travel restrictions?
+
+   ![Screenshot of Portugal Cancellation Rate](images/Portugal_Cancellation_Rate.png)
+
+   - Portugal also happens to be the country with the highest number of bookings total. However, it's cancellation rate is 36.26%, which is about ~10% higher than the average.
+
+   ![Screenshot of Cancelled Bookings Per Country](images/Cancelled_Bookings_Per_Country.png)
+
 ## Technologies Used
 
 - Power BI Desktop (report building and data modeling)
@@ -56,3 +69,47 @@ This interactive Power BI report analyzes hotel booking data to uncover insights
 - Power Query (data transformation and ETL)
 
 ## If viewed in PowerBI, the report dashboard includes ways to filter for hotels by their type (City/Resort). Filtering by which Country the hotel is in or by specific dates is also available.
+
+## Key DAX Measures
+
+Below are some of the DAX measures used to calculate custom KPIs in the report:
+
+```DAX
+-- Total Nights Booked per Reservation
+Total Nights = 
+= SUM(Query1[stays_in_week_nights]) + SUM(Query1[stays_in_weekend_nights])
+
+-- Finding Bookings That Required at Least One Parking Space
+parking_required 
+= IF(Query1[required_car_parking_spaces] > 0, TRUE,FALSE) 
+
+-- Number of Bookings That Required Parking
+TRUEparking_required 
+= CALCULATE ( COUNTROWS (Query1), FILTER (Query1, Query1[parking_required] = TRUE()))
+
+-- Percentage of Bookings that Required Parking
+Parking_Percentage 
+= DIVIDE(
+    COUNTROWS(FILTER(Query1, [parking_required] = TRUE)),
+    [Total Nights]
+)
+
+-- Revenue Per Booking
+Rev_Per_Booking = 
+DIVIDE(
+    SUMX(Query1, Query1[adr] * (Query1[stays_in_week_nights] + Query1[stays_in_weekend_nights])),
+    COUNTROWS(FILTER (Query1, Query1[is_canceled] <> 1))
+)
+
+-- Average Lead Time 
+Average_Lead_Time = 
+DIVIDE(
+    SUM(Query1[lead_time]),
+    [Total_Bookings])
+
+
+-- Related To Cancellation
+Cancelled_Bookings = COUNTROWS(FILTER(Query1, Query1[is_canceled] <> 0))
+Non_Canceled_Bookings = COUNTROWS(FILTER(Query1, Query1[is_canceled] <> 1))
+Cancellation_Rate = 
+    DIVIDE([Cancelled_Bookings], COUNTROWS(Query1))
